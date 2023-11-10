@@ -45,7 +45,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
-                <version>3.9.1</version>
+                <version>4.0.0-M11</version>
             </plugin>
 
             <plugin>
@@ -131,6 +131,16 @@
                 <version>3.14.0</version>
             </plugin>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-changelog-plugin</artifactId>
+            </plugin>
+
         </plugins>
     </reporting>
+
+    <scm>
+        <connection>scm:git:git:https://github.com/Sterenn35/tpmaven.git</connection>
+        <url>https://github.com/Sterenn35/tpmaven.git</url>
+    </scm>
 </project>
