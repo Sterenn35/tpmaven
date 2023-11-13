@@ -63,7 +63,9 @@ public class FirstPdf {
     int i = 0;
     if (i == 0){
       int j = 2;
-    } else if (i == 2) {
+    } else if (i == 10) {
+      int j = 3;
+    } else if (i == 20) {
       int j = 3;
     } else if (i == 3) {
       int j = 3;
