@@ -59,6 +59,7 @@ public class FirstPdf {
   public static void addMetaData(Document document) {
     document.addTitle("My first PDF");
     document.addTitle("My first PDF");
+    // Code crée pour avoir de la duplication
     int i = 0;
     if (i == 0){
       int j = 2;
