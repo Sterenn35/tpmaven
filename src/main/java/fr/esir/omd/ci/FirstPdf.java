@@ -59,59 +59,6 @@ public class FirstPdf {
   public static void addMetaData(Document document) {
     document.addTitle("My first PDF");
     document.addTitle("My first PDF");
-    // Code crée pour avoir de la duplication
-    int i = 0;
-    if (i == 0){
-      int j = 2;
-    } else if (i == 10) {
-      int j = 3;
-    } else if (i == 2) {
-      int j = 3;
-    } else if (i == 3) {
-      int j = 3;
-    } else if (i == 4) {
-      int j = 3;
-    } else if (i == 5) {
-      int j = 3;
-    }else if (i == 6) {
-      int j = 3;
-    }else if (i == 7) {
-      int j = 3;
-    }else if (i == 8) {
-      int j = 3;
-    }else if (i == 9) {
-      int j = 3;
-    }else if (i == 10) {
-      int j = 3;
-    }else if (i == 11) {
-      int j = 3;
-    }else if (i == 12) {
-      int j = 3;
-    }else if (i == 13) {
-      int j = 3;
-    }else if (i == 14) {
-      int j = 3;
-    }else if (i == 15) {
-      int j = 3;
-    }else if (i == 16) {
-      int j = 3;
-    }else if (i == 17) {
-      int j = 3;
-    }else if (i == 18) {
-      int j = 3;
-    }else if (i == 19) {
-      int j = 3;
-    }else if (i == 1) {
-      int j = 3;
-    }else if (i == 1) {
-      int j = 3;
-    }else if (i == 1) {
-      int j = 3;
-    }else if (i == 1) {
-      int j = 3;
-    }else if (i == 1) {
-      int j = 3;
-    }
     document.addSubject("TPMaven avec iText");
     document.addKeywords("Java, PDF, iText");
     document.addAuthor("Sterenn LE HIR");

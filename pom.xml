@@ -12,6 +12,11 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sonar.host.url>
+            http://localhost:9000
+        </sonar.host.url>
+        <sonar.login>admin</sonar.login>
+        <sonar.password>admin1</sonar.password>
     </properties>
 
     <dependencies>
@@ -96,6 +101,30 @@
                     <argLine>${argLine} -XX:PermSize=128m -XX:MaxPermSize=512m</argLine>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.10.0.2594</version> <!-- Use the latest version -->
+                <configuration>
+                    <sonar.host.url>http://localhost:9000/</sonar.host.url> <!-- Replace with your SonarQube server URL -->
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 
