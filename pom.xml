@@ -121,6 +121,9 @@
                         <goals>
                             <goal>jar</goal>
                         </goals>
+                        <configuration>
+                            <classifier>client</classifier>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
