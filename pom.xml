@@ -94,6 +94,19 @@
             </plugin>
 
             <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.14.1</version>
+                <configuration>
+                    <!--suppress UnresolvedMavenProperty -->
+                    <!--                    <argLine>${argLine} -XX:PermSize=128m -XX:MaxPermSize=512m</argLine>-->
+                    <includes>
+                        <include>**\*Tests.java</include>
+                        <!-- Add any additional test inclusion patterns -->
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.10.0.2594</version> <!-- Use the latest version -->
@@ -117,19 +130,6 @@
             </plugin>
 
             <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.14.1</version>
-                <configuration>
-                    <!--suppress UnresolvedMavenProperty -->
-                    <!--                    <argLine>${argLine} -XX:PermSize=128m -XX:MaxPermSize=512m</argLine>-->
-                    <includes>
-                        <include>**\*Tests.java</include>
-                        <!-- Add any additional test inclusion patterns -->
-                    </includes>
-                </configuration>
-            </plugin>
-            
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.3.0</version>
@@ -142,6 +142,10 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
+                    <!--<descriptors>
+                        <descriptor>src/assembly/source-zip.xml</descriptor>
+                        <descriptor>src/assembly/jar-zip.xml</descriptor>
+                    </descriptors>-->
                 </configuration>
                 <executions>
                     <execution>
