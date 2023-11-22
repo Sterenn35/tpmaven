@@ -100,11 +100,10 @@
                     <!--suppress UnresolvedMavenProperty -->
                     <argLine>${argLine} -XX:PermSize=128m -XX:MaxPermSize=512m</argLine>
                     <includes>
-                        <include>src\test\java\fr\esir\omd\ci\Tests.java</include>
+                        <include>**\*Tests.java</include>
                         <!-- Add any additional test inclusion patterns -->
                     </includes>
                 </configuration>
-
             </plugin>
 
             <plugin>
