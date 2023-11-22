@@ -98,7 +98,7 @@
                 <version>2.14.1</version>
                 <configuration>
                     <!--suppress UnresolvedMavenProperty -->
-                    <argLine>${argLine} -XX:PermSize=128m -XX:MaxPermSize=512m</argLine>
+<!--                    <argLine>${argLine} -XX:PermSize=128m -XX:MaxPermSize=512m</argLine>-->
                     <includes>
                         <include>**\*Tests.java</include>
                         <!-- Add any additional test inclusion patterns -->
