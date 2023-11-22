@@ -99,7 +99,12 @@
                 <configuration>
                     <!--suppress UnresolvedMavenProperty -->
                     <argLine>${argLine} -XX:PermSize=128m -XX:MaxPermSize=512m</argLine>
+                    <includes>
+                        <include>src/test/java/fr/esir/omd/ci/Tests.java</include>
+                        <!-- Add any additional test inclusion patterns -->
+                    </includes>
                 </configuration>
+
             </plugin>
 
             <plugin>
@@ -127,15 +132,27 @@
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.3.0</version>
                 <configuration>
-                    <!-- Configure the plugin here -->
-                    <includes>
-                        <include>src/test/java/fr/esir/omd/ci/Tests.java</include>
-                        <!-- Add any additional test inclusion patterns -->
-                    </includes>
+                    <archive>
+                        <manifest>
+                            <mainClass>fr.esir.omd.ci.FirstPdf</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>
