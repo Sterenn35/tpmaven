@@ -5,3 +5,5 @@ Z
 *src/main/java/fr/esir/omd/ci/FirstPdf.java,f\6\f6cba16a305688fa0fcb9d1a0757e3ddba1a355c
 W
 'src/test/java/fr/esir/omd/ci/tests.java,6\e\6e0167e0be4dbed310a38c484b6f96bb7dec5025
+W
+'src/test/java/fr/esir/omd/ci/Tests.java,0\8\08ce1d5d087ee8221bb298f3c8885b8ac2fec2e1

@@ -132,7 +132,7 @@
                 <configuration>
                     <!-- Configure the plugin here -->
                     <includes>
-                        <include>**/*Test.java</include>
+                        <include>src/test/java/fr/esir/omd/ci/Tests.java</include>
                         <!-- Add any additional test inclusion patterns -->
                     </includes>
                 </configuration>

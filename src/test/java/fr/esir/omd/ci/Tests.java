@@ -11,7 +11,7 @@ import java.io.FileOutputStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class tests {
+public class Tests {
 
     Document document = new Document();
     private static String FILE = "Test.pdf";
