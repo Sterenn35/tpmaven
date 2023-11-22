@@ -142,10 +142,10 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
-                    <!--<descriptors>
+                    <descriptors>
                         <descriptor>src/assembly/source-zip.xml</descriptor>
                         <descriptor>src/assembly/jar-zip.xml</descriptor>
-                    </descriptors>-->
+                    </descriptors>
                 </configuration>
                 <executions>
                     <execution>

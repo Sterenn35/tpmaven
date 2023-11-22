@@ -9,11 +9,12 @@
     </formats>
     <fileSets>
         <fileSet>
-            <directory>src</directory>
-            <includes>
-                <include>pom.xml</include>
-                <include>README.md</include>
-            </includes>
+            <directory>${project.basedir}/src</directory>
         </fileSet>
     </fileSets>
+    <files>
+        <file>
+           <source>${project.basedir}/pom.xml</source>
+        </file>
+    </files>
 </assembly>
